@@ -8,7 +8,7 @@ int main(){
     int rem2=n-9;
     int hex= 64+ rem2;
     printf("Hexadecimal:%c\n",rem2);
-    printf("Octal:%d",rem1);
+    printf("Octal:%d",rem);
 
     return 0;
 }
