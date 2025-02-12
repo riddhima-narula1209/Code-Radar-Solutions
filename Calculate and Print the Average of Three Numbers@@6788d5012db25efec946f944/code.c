@@ -1,7 +1,9 @@
 // Your code here...
 #include<stdio.h>
 int main(){
-    int a,b,c,;
+    int a;
+    int b;
+    int c;
     float average;
     scanf("%d ",&a);
     scanf("%d ",&b);
