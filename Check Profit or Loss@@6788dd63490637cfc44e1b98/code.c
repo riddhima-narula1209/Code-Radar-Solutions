@@ -7,10 +7,10 @@ int main(){
     scanf("%d",&b);
     c=a-b;
     if(c>0){
-        printf("Profit");
+        printf("Loss");
     }
     else if(c<0){
-        printf("Loss");
+        printf("Profit");
     }
     else{
         printf("No Profit No Loss");
