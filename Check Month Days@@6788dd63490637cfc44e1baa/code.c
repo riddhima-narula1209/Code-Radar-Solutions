@@ -6,6 +6,9 @@ int main(){
     if(n==1 || n==3 || n==5 || n==7 || n==8 || n==10 || n==12){
         printf("%d",31);
     }
+    else if (n==2){
+        printf("%d",28);
+    }
     else{
         printf("%d",30);
     }
