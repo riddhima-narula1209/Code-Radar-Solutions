@@ -7,29 +7,22 @@ int main(){
     scanf("%d\n",&b);
     scanf("%d",&c);
     switch(c){
-        case '+'{
+        case '+':
           d=a+b;
           printf("%d",d);
           break;  
-
-        }
-        case '-'{
+        case '-';
           d=a-b;
           break;  
-
-        }
-        case '*'{
+        case '*';
           d=a*b;
           break;  
-
-        }
-        case '/'{
+        case '/';
           d=a/b;
           break;  
-
-        }
 
 
     }
     printf("%d",d);
+    return 0;
 }
