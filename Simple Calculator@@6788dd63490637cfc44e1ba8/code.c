@@ -9,6 +9,7 @@ int main(){
     switch(c){
         case '+'{
           d=a+b;
+          printf("%d",d);
           break;  
 
         }
@@ -27,5 +28,8 @@ int main(){
           break;  
 
         }
+
+
     }
+    printf("%d",d);
 }
