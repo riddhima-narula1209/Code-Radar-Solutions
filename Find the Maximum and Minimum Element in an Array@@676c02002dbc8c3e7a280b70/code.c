@@ -10,7 +10,7 @@ int main(){
     }
     for(i=0;i<N;i++){
         if(a<arr[i]){
-            a=arr[i];
+            arr[i]=a;
         }
         else if(b>arr[i]){
             b=arr[i];
