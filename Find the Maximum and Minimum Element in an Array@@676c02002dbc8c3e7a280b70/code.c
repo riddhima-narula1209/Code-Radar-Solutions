@@ -3,11 +3,13 @@
 int main(){
     int N;
     scanf("%d",&N);
-    int i,a=N,b=N;
+    int i;
     int arr[N];
+
     for(i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
+    int a=arr[0],b=arr[0];
     for(i=0;i<N;i++){
         if(a<arr[i]){
             a=arr[i];
