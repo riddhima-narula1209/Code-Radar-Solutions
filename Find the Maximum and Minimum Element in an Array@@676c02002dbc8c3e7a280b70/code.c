@@ -10,7 +10,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int a=arr[0],b=arr[0];
-    for(i=0;i<N;i++){
+    for(i=0;i<N-1;i++){
         if(a<arr[i]){
             a=arr[i];
         }
