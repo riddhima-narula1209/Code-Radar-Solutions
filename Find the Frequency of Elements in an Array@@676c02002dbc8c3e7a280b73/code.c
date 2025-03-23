@@ -29,6 +29,6 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d",&arr[N]);
     }
-    frequency(arr,n);
+    frequency(arr,N);
     return 0;
 }
