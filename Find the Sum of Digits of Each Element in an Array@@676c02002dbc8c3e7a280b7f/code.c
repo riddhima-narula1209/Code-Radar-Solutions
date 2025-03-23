@@ -17,6 +17,6 @@ int main(){
             n=n/10;
         }
     }
-    printf("%d",arr[i]);
+    printf("%d ",sum);
     return 0;
 }
