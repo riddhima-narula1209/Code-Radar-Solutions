@@ -1,6 +1,6 @@
 // Your code here...
 #include<stdio.h>
-void sumdigits(int r,int n){
+int sumdigits(int r,int n){
     int sum=0;
     while(n>0){
         r=n%10;
