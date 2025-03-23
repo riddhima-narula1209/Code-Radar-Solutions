@@ -1,27 +1,41 @@
-// Your code here...
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+#include <limits.h> // For INT_MIN
+
+int main() {
     int N;
-    scanf("%d",&N);
-    int i;
-    int arr[N];
-    for(i=0;i<N;i++){
-        scanf("%d",&arr[i]);
+    scanf("%d", &N);
+
+    int i, arr[N];
+
+    // Input array elements
+    for (i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
     }
-    int largest=arr[0];
-    int secondlargest=arr[0];
-    for(i=0;i<N;i++){
-        if(arr[i]>largest){
-            secondlargest=largest;
-            largest=arr[i];
-        }
-        else if(arr[i]>secondlargest && arr[i]!=largest){
-            secondlargest=arr[i];
-        }
-        else{
-            printf("-1");
+
+    // Edge case: If there's only one element, no second largest exists
+    if (N < 2) {
+        printf("-1\n");
+        return 0;
+    }
+
+    int largest = INT_MIN, secondlargest = INT_MIN;
+
+    // Finding the largest and second largest elements
+    for (i = 0; i < N; i++) {
+        if (arr[i] > largest) {
+            secondlargest = largest; // Update second largest
+            largest = arr[i]; // Update largest
+        } else if (arr[i] > secondlargest && arr[i] != largest) {
+            secondlargest = arr[i]; // Update second largest
         }
     }
-    printf("%d",secondlargest);
+
+    // If secondlargest remains INT_MIN, it means there was no valid second largest
+    if (secondlargest == INT_MIN) {
+        printf("-1\n");
+    } else {
+        printf("%d\n", secondlargest);
+    }
+
     return 0;
 }
