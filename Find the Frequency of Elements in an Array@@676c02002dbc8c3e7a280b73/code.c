@@ -20,7 +20,7 @@ void frequency(int arr[],int N){
 
         }
     }
-    printf("%d | %d\n",arr[i],count);
+    printf("%d %d\n",arr[i],count);
 }
 int main(){
     int N;
