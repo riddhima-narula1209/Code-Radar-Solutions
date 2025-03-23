@@ -18,11 +18,10 @@ int main(){
         else if(arr[i]>secondlargest && arr[i]!=largest){
             secondlargest=arr[i];
         }
-        
-    }
-    else{
+        else{
             printf("-1");
         }
+    }
     printf("%d",secondlargest);
     return 0;
 }
