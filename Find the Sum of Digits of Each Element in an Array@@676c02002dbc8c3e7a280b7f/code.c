@@ -3,6 +3,7 @@
 int sumdigits(int n){
     int sum=0;
     int r;
+    n=(n<0)? -n:n;
     while(n>0){
         r=n%10;
         sum=sum+r;
