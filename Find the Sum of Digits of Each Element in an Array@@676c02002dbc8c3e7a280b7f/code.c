@@ -1,7 +1,8 @@
 // Your code here...
 #include<stdio.h>
-int sumdigits(int r,int n){
+int sumdigits(int n){
     int sum=0;
+    int r;
     while(n>0){
         r=n%10;
         sum=sum+r;
@@ -18,7 +19,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(i=0;i<N;i++){
-        printf("%d ",sumdigits(r,n));
+        printf("%d ",sumdigits(arr[i]));
     }
     return 0;
 }
