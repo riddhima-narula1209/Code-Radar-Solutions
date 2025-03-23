@@ -1,6 +1,6 @@
 // Your code here...
 #include<stdio.h>
-void sum(int r,int n,int sum){
+void sumdigits(int r,int n,int sum){
     int sum=0;
     while(n>0){
         r=n%10;
@@ -18,7 +18,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(i=0;i<N;i++){
-        printf("%d ",sum(n,r,sum));
+        printf("%d ",sumdigits(n,r,sum));
     }
     return 0;
 }
