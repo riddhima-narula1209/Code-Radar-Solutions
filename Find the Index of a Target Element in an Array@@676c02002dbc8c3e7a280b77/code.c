@@ -1,4 +1,4 @@
-// Your code here...
+#include<stdio.h>
 int find(int arr[],int T,int N){
     int i;
     for(i=0;i<N;i++){
