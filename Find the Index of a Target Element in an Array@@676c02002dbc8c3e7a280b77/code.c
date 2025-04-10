@@ -1,5 +1,5 @@
 // Your code here...
-int find(int arr[],T,N){
+int find(int arr[],int T,int N){
     int i;
     for(i=0;i<N;i++){
         if(arr[i]==T){
