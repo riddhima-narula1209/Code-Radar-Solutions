@@ -10,7 +10,7 @@ int find(int arr[],int T,int N){
 }
 int main(){
     int N;
-    scanf("%d\n",N);
+    scanf("%d",N);
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
